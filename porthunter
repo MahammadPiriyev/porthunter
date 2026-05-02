@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -e
+
+COMMAND=$1
+
+case "$COMMAND" in
+    suggest)
+        bash lib/ports.sh suggest
+        ;;
+    check)
+        bash lib/ports.sh check "$2"
+        ;;
+    kill)
+        bash lib/process.sh kill "$2"
+        ;;
+    *)
+        echo "PortHunter CLI"
+        echo ""
+        echo "Commands:"
+        echo "  porthunter suggest"
+        echo "  porthunter check <port>"
+        echo "  porthunter kill <port>"
+        ;;
+esac

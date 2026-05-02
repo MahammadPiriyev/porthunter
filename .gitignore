@@ -1,0 +1,41 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Environment files
+.env
+.env.*
+
+# Local install artifacts (optional)
+dist/
+build/
+
+# Bash history / editor files
+*.swp
+*.swo
+*~
+
+# IDE files
+.vscode/
+.idea/
+
+# Executable build outputs (if later Go version)
+*.exe
+*.out
+
+# Linux install locations (NEVER commit system-installed files)
+usr/
+usr/local/bin/
+
+# Security
+*.key
+*.pem
